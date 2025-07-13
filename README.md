@@ -8,11 +8,15 @@ A command-line tool to reset your global Python environment.
 
 `pywipe` acts as a 'factory reset' for your global Python installation, safely removing all user-installed packages while preserving essential ones like `pip` and `setuptools`. It's designed to clean up cluttered global environments without affecting your isolated virtual environments.
 
+---
+
 ## Why PyWipe?
 
 Over time, your global Python space can become a tangled mess of packages from various projects, leading to version conflicts, slower startup times, and the infamous "it works on my machine" syndrome. Manually cleaning this up is tedious and risky. PyWipe automates this process, providing a safe and reliable "factory reset" button for your Python environment.
 
-✨ Features
+---
+
+## ✨ Features
 
 *   🧹 **Clean Global Environment:** Uninstalls all packages installed in the global Python site-packages directory.
 *   🛡️ **Essential Package Protection:** Automatically whitelists critical packages (`pip`, `setuptools`, etc.) to ensure your Python installation remains functional.
@@ -22,14 +26,18 @@ Over time, your global Python space can become a tangled mess of packages from v
 *   ⚠️ **Virtual Environment Safety:** Prevents accidental execution inside a virtual environment, protecting your isolated project dependencies.
 *   ✨ **Rich Output:** Provides clear, colorful console output using the `rich` library.
 
-📚 Tech Stack
+---
+
+## 📚 Tech Stack
 
 *   **Python**
 *   **Click:** For building the command-line interface.
 *   **Rich:** For beautiful and informative console output.
 *   **setuptools:** Standard Python package building tools.
 
-🚀 Installation
+---
+
+## 🚀 Installation
 
 `pywipe` is a Python package and can be installed globally using pip:
 
@@ -39,7 +47,9 @@ pip install pywipe
 
 *Note: This tool is specifically designed for your global Python environment. Do not install or run it inside a virtual environment.*
 
-▶️ Usage
+---
+
+## ▶️ Usage
 
 Run the `pywipe run` command to initiate the cleanup process.
 
@@ -69,11 +79,18 @@ pywipe run --dry-run
 ```bash
 pywipe restore --from pywipe_backup_2025-07-13_10-39-24.txt (add you actual file name).
 ```
+---
 
 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+---
+
 📝 License
 
 Distributed under the MIT License.
+
+---
+
+**If GitRocket helped streamline your workflow, consider giving us a ⭐!**
