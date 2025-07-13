@@ -26,3 +26,6 @@
     ENV/
     # PyWipe specific
     pywipe_backup_*.txt
+    # Build artifacts
+    *.egg-info
+    *.pyc

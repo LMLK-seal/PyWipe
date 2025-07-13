@@ -64,6 +64,11 @@ To see which packages would be uninstalled without actually uninstalling them, u
 ```bash
 pywipe run --dry-run
 ```
+**Restore:**
+*   🔄 **Easy Restoration:** Quickly reinstall all packages from a backup file using the `restore` command.
+```bash
+pywipe restore --from pywipe_backup_2025-07-13_10-39-24.txt (add you actual file name).
+```
 
 🤝 Contributing
 
