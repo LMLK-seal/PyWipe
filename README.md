@@ -75,7 +75,7 @@ To see which packages would be uninstalled without actually uninstalling them, u
 pywipe run --dry-run
 ```
 **Restore:**
-*   🔄 **Easy Restoration:** Quickly reinstall all packages from a backup file using the `restore` command.
+**Easy Restoration:** Quickly reinstall all packages from a backup file using the `restore` command.
 ```bash
 pywipe restore --from pywipe_backup_2025-07-13_10-39-24.txt (add you actual file name).
 ```
@@ -93,4 +93,4 @@ Distributed under the MIT License.
 
 ---
 
-**If GitRocket helped streamline your workflow, consider giving us a ⭐!**
+**If PyWipe helped streamline your workflow, consider giving us a ⭐!**
