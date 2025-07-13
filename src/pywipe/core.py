@@ -3,6 +3,7 @@
 import subprocess
 from rich.console import Console
 from rich.table import Table
+from rich.prompt import Confirm  # <-- ADD THIS LINE
 from .config import BASE_PACKAGES
 
 console = Console()
@@ -51,9 +52,11 @@ def uninstall_packages(packages, dry_run=False):
         console.print("\n[bold yellow]Dry run mode. No packages will be uninstalled.[/bold yellow]")
         return
 
-    if not console.confirm("\n[bold red]Do you want to proceed with uninstallation?[/bold red]"):
+    # vvv CHANGE THIS LINE vvv
+    if not Confirm.ask("\n[bold red]Do you want to proceed with uninstallation?[/bold red]"):
         console.print("[yellow]Aborted.[/yellow]")
         return
+    # ^^^ CHANGE THIS LINE ^^^
 
     for pkg in packages:
         try:
